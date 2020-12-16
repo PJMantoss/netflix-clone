@@ -8,3 +8,7 @@ export default function Jumbotron({children, direction = "row", ...restProps}){
         </Item>
     )
 }
+
+Jumbotron.Container = function JumbotronContainer(){
+    return <Container {...restProps}>{children}</Container>
+}
