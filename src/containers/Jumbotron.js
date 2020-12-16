@@ -13,7 +13,7 @@ export default function JumbotronContainer(){
                     </Jumbotron.Pane>
 
                     <Jumbotron.Pane>
-                        <Jumbotron.Image />
+                        <Jumbotron.Image src={item.image} alt={item.alt} />
                     </Jumbotron.Pane>
                 </Jumbotron>
             ))}
