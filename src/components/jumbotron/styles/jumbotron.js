@@ -28,7 +28,15 @@ export const Item = styled.div`
     display: flex;
 `;
 
-export const Container = styled.section``;
+export const Container = styled.section`
+    background: #000;
+
+    @media(max-width: 1000px){
+        ${Item}:last-of-type h2{
+            margin-bottom: 50px;
+        }
+    }
+`;
 
 export const Title = styled.h1`
     font-size: 50px;
