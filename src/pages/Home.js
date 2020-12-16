@@ -5,7 +5,7 @@ export default function Home(){
     return(
         <Jumbotron.Container>
             <Jumbotron.Title>Big Hello</Jumbotron.Title>
-            <Jumbotron.Title>Big Hello</Jumbotron.Title>
+            <Jumbotron.SubTitle>Small Hello</Jumbotron.SubTitle>
         </Jumbotron.Container>
     )
 }
