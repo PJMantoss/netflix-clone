@@ -12,7 +12,9 @@ export default function JumbotronContainer(){
                         <Jumbotron.SubTitle>{item.subTitle}</Jumbotron.SubTitle>
                     </Jumbotron.Pane>
 
-                    <Jumbotron.Pane></Jumbotron.Pane>
+                    <Jumbotron.Pane>
+                        <Jumbotron.Image />
+                    </Jumbotron.Pane>
                 </Jumbotron>
             ))}
         </Jumbotron.Container>
