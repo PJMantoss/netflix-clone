@@ -6,6 +6,8 @@ export const Inner = styled.div`
     justify-content: space-between;
     flex-direction: ${({ direction }) => direction};
     max-width: 1100px;
+    margin: auto;
+    width: 100%;
 `;
 
 export const Item = styled.div``;
