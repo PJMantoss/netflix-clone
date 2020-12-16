@@ -9,11 +9,14 @@ function App() {
         <Route path="/">
             <Home />
         </Route>
-        <Route path="/sign-in">
+        <Route path="/signin">
             <h2>Sign In Page</h2>
         </Route>
-        <Route path="/sign-up">
+        <Route path="/signup">
             <h2>Sign Up Page</h2>
+        </Route>
+        <Route path="/browse">
+            <h2>Browse Page</h2>
         </Route>
       </Switch>
     </Router>
