@@ -1,11 +1,8 @@
 import React from 'react';
-import Jumbotron from '../components/jumbotron';
+import JumbotronContainer from '../containers/Jumbotron';
 
 export default function Home(){
     return(
-        <Jumbotron.Container>
-            <Jumbotron.Title>Big Hello</Jumbotron.Title>
-            <Jumbotron.SubTitle>Small Hello</Jumbotron.SubTitle>
-        </Jumbotron.Container>
+        <JumbotronContainer />
     )
 }
