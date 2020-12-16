@@ -24,3 +24,7 @@ Jumbotron.SubTitle = function JumbotronSubTitle({children, ...restProps}){
 Jumbotron.Pane = function JumbotronPane({children, ...restProps}){
     return <Pane {...restProps}>{children}</Pane>
 }
+
+Jumbotron.Image = function JumbotronImage({ ...restProps}){
+    return <Image {...restProps} />
+}
