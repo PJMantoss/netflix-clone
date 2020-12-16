@@ -30,6 +30,18 @@ export const Title = styled.h1`
     }
 `;
 
-export const SubTitle = styled.h2``;
+export const SubTitle = styled.h2`
+    font-size: 26px;
+    font-weight: normal;
+    line-height: normal;
+    margin-bottom: 8px;
 
-export const Image = styled.img``;
+    @media (max-width: 600px){
+        font-size: 18px;
+    }
+`;
+
+export const Image = styled.img`
+    max-width: 100%;
+    height: auto;
+`;
