@@ -4,6 +4,8 @@ export const Container = styled.div`
     display: flex;
     max-width: 1000px;
     flex-direction: column;
+    padding: 70px 56px;
+    margin: auto;
 `;
 
 export const Row = styled.div``;
