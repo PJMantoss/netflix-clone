@@ -8,10 +8,31 @@ export function FooterContainer(){
             <Footer.Break/>
             <Footer.Row>
                 <Footer.Column>
-                    <Footer.Link></Footer.Link>
-                    <Footer.Link></Footer.Link>
-                    <Footer.Link></Footer.Link>
-                    <Footer.Link></Footer.Link>
+                    <Footer.Link href="#"></Footer.Link>
+                    <Footer.Link href="#"></Footer.Link>
+                    <Footer.Link href="#"></Footer.Link>
+                    <Footer.Link href="#"></Footer.Link>
+                </Footer.Column>
+
+                <Footer.Column>
+                    <Footer.Link href="#"></Footer.Link>
+                    <Footer.Link href="#"></Footer.Link>
+                    <Footer.Link href="#"></Footer.Link>
+                    <Footer.Link href="#"></Footer.Link>
+                </Footer.Column>
+
+                <Footer.Column>
+                    <Footer.Link href="#"></Footer.Link>
+                    <Footer.Link href="#"></Footer.Link>
+                    <Footer.Link href="#"></Footer.Link>
+                    <Footer.Link href="#"></Footer.Link>
+                </Footer.Column>
+
+                <Footer.Column>
+                    <Footer.Link href="#"></Footer.Link>
+                    <Footer.Link href="#"></Footer.Link>
+                    <Footer.Link href="#"></Footer.Link>
+                    <Footer.Link href="#"></Footer.Link>
                 </Footer.Column>
             </Footer.Row>
             <Footer.Text>Netflix Nigeria</Footer.Text>
