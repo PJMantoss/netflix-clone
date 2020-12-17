@@ -10,13 +10,13 @@ export default function Accordion({ children, ...restProps }){
 }
 
 Accordion.Title = function AccordionTitle({ children, ...restProps }){
-    return <Title>{children}</Title>
+    return <Title {...restProps}>{children}</Title>
 }
 
 Accordion.Header = function AccordionHeader({ children, ...restProps }){
-    return <Header>{children}</Header>
+    return <Header {...restProps}>{children}</Header>
 }
 
 Accordion.Body = function AccordionBody({ children, ...restProps }){
-    return <Body>{children}</Body>
+    return <Body {...restProps}>{children}</Body>
 }
