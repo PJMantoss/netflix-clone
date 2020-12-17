@@ -35,7 +35,11 @@ export const Link = styled.a`
     text-decoration: none;
 `;
 
-export const Title = styled.p``;
+export const Title = styled.p`
+    color: #757575;
+    font-size: 16px;
+    margin-bottom: 40px;
+`;
 
 export const Text = styled.p``;
 
