@@ -5,3 +5,9 @@ export const Container = styled.div`
 `;
 
 export const Row = styled.div``;
+
+export const Column = styled.div``;
+
+export const Link = styled.a``;
+
+export const Row = styled.div``;
