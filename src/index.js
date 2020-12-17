@@ -6,10 +6,10 @@ import { GlobalStyles } from './globalStyles'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <>
     <GlobalStyles />
     <App />
-  </React.StrictMode>,
+  </>,
   document.getElementById('root')
 );
 
