@@ -23,10 +23,10 @@ export function FooterContainer(){
                 </Footer.Column>
 
                 <Footer.Column>
-                    <Footer.Link href="#"></Footer.Link>
-                    <Footer.Link href="#"></Footer.Link>
-                    <Footer.Link href="#"></Footer.Link>
-                    <Footer.Link href="#"></Footer.Link>
+                    <Footer.Link href="#">Account</Footer.Link>
+                    <Footer.Link href="#">Redeem Gift Cards</Footer.Link>
+                    <Footer.Link href="#">Privacy Policy</Footer.Link>
+                    <Footer.Link href="#">Speed Test</Footer.Link>
                 </Footer.Column>
 
                 <Footer.Column>
