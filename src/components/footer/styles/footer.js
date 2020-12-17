@@ -14,7 +14,11 @@ export const Container = styled.div`
 
 export const Row = styled.div``;
 
-export const Column = styled.div``;
+export const Column = styled.div`
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+`;
 
 export const Link = styled.a``;
 
