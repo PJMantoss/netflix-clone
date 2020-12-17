@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Container, Inner, Body, Title, Header } from './styles/accordion';
 
-export default function Accordion({ cildren, ...restProps }){
+export default function Accordion({ children, ...restProps }){
     return (
-        <Container {}>
-            <Inner>{}</Inner>
+        <Container {...restProps}>
+            <Inner>{children}</Inner>
         </Container>
     )
 }
