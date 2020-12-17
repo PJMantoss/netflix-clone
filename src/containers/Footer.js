@@ -30,10 +30,10 @@ export function FooterContainer(){
                 </Footer.Column>
 
                 <Footer.Column>
-                    <Footer.Link href="#"></Footer.Link>
-                    <Footer.Link href="#"></Footer.Link>
-                    <Footer.Link href="#"></Footer.Link>
-                    <Footer.Link href="#"></Footer.Link>
+                    <Footer.Link href="#">Media Center</Footer.Link>
+                    <Footer.Link href="#">Buy Gift Cards</Footer.Link>
+                    <Footer.Link href="#">Cookie Preferences</Footer.Link>
+                    <Footer.Link href="#">Legal Notices</Footer.Link>
                 </Footer.Column>
             </Footer.Row>
             <Footer.Text>Netflix Nigeria</Footer.Text>
