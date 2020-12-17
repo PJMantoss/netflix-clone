@@ -6,6 +6,10 @@ export const Container = styled.div`
     flex-direction: column;
     padding: 70px 56px;
     margin: auto;
+
+    @media(max-width: 600px){
+        padding: 60px 30px;
+    }
 `;
 
 export const Row = styled.div``;
