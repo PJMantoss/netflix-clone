@@ -2,4 +2,8 @@ import React from 'react';
 import { Accordion } from '../components';
 import FaqsData from '../fixtures/faqs.json';
 
-export function FaqsContainer(){}
+export function FaqsContainer(){
+    return(
+        <Accordion></Accordion>
+    )
+}
