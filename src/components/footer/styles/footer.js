@@ -18,7 +18,7 @@ export const Row = styled.div`
     grid-gap: 15px;
 
     @media(max-width: 660px){
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
 `;
 
@@ -28,7 +28,11 @@ export const Column = styled.div`
     text-align: left;
 `;
 
-export const Link = styled.a``;
+export const Link = styled.a`
+    color: #757575;
+    margin-bottom: 20px;
+    text-decoration: none;
+`;
 
 export const Title = styled.p``;
 
