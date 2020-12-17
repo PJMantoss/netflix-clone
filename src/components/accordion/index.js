@@ -1,2 +1,2 @@
 import React, { useState } from 'react';
-import {} from './styles/accordion';
+import { Container, Inner, Body, Title, Header } from './styles/accordion';
