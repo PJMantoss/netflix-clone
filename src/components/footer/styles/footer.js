@@ -30,6 +30,7 @@ export const Column = styled.div`
 
 export const Link = styled.a`
     color: #757575;
+    font-size: 13px;
     margin-bottom: 20px;
     text-decoration: none;
 `;
