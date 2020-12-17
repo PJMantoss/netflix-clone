@@ -12,7 +12,10 @@ export const Container = styled.div`
     }
 `;
 
-export const Row = styled.div``;
+export const Row = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr))
+`;
 
 export const Column = styled.div`
     display: flex;
