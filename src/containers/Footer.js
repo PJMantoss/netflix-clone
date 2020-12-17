@@ -4,7 +4,10 @@ import { Footer } from '../components';
 export function FooterContainer(){
     return(
         <Footer>
-            <p>Copyright 2020</p>
+            <Footer.Title>Questions? Contact Us</Footer.Title>
+            <Footer.Break/>
+            <Footer.Row></Footer.Row>
+            <Footer.Text>Netflix Nigeria</Footer.Text>
         </Footer>
     )
 }
