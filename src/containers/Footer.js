@@ -6,7 +6,14 @@ export function FooterContainer(){
         <Footer>
             <Footer.Title>Questions? Contact Us</Footer.Title>
             <Footer.Break/>
-            <Footer.Row></Footer.Row>
+            <Footer.Row>
+                <Footer.Column>
+                    <Footer.Link></Footer.Link>
+                    <Footer.Link></Footer.Link>
+                    <Footer.Link></Footer.Link>
+                    <Footer.Link></Footer.Link>
+                </Footer.Column>
+            </Footer.Row>
             <Footer.Text>Netflix Nigeria</Footer.Text>
         </Footer>
     )
