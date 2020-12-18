@@ -8,3 +8,6 @@ export const Item = styled.div``;
 
 export const Title = styled.h1``;
 
+export const Header = styled.header``;
+
+export const Body = styled.body``;
