@@ -14,7 +14,8 @@ export const Inner = styled.div`
 `;
 
 export const Frame = styled.div`
-    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-bottom: 10px;
 `;
 
 export const Item = styled.div`
@@ -49,6 +50,7 @@ export const Header = styled.header`
     padding: 0.8em 1.2em;
     user-select: none;
     align-items: center;
+    width: 100%;
 
     @media(max-width: 600px){
         font-size: 16px;
@@ -56,7 +58,6 @@ export const Header = styled.header`
 `;
 
 export const Body = styled.body`
-    max-width: 1200px;
     transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
     font-size: 26px;
     line-height: normal;
@@ -66,6 +67,7 @@ export const Body = styled.body`
     padding: 0.8em 1.2em;
     user-select: none;
     align-items: center;
+    width: 100%;
 
     @media(max-width: 600px){
         font-size: 16px;
