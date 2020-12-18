@@ -45,6 +45,10 @@ export const Header = styled.header`
     padding: 0.8em 1.2em;
     user-select: none;
     align-items: center;
+
+    @media(max-width: 600px){
+        font-size: 16px;
+    }
 `;
 
 export const Body = styled.body`
@@ -53,6 +57,7 @@ export const Body = styled.body`
     line-height: normal;
     font-weight: normal;
     background: #303030;
+    color: white;
     padding: 0.8em 1.2em;
     user-select: none;
     align-items: center;
