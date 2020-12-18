@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, createContext } from 'react';
 import { Container, Inner, Body, Title, Item, Frame, Header } from './styles/accordion';
 
 export default function Accordion({ children, ...restProps }){
