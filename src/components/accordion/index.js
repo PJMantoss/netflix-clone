@@ -1,6 +1,8 @@
 import React, { useState, useContext, createContext } from 'react';
 import { Container, Inner, Body, Title, Item, Frame, Header } from './styles/accordion';
 
+const toggleContext = createContext();
+
 export default function Accordion({ children, ...restProps }){
     return (
         <Container {...restProps}>
