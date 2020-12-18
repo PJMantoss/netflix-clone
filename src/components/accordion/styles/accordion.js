@@ -25,6 +25,9 @@ export const Item = styled.div`
 export const Title = styled.h1`
     font-size: 50px;
     line-height: 1.1;
+    margin: 0 0 8px 0;
+    color: white;
+    text-align: center;
 `;
 
 export const Header = styled.header``;
