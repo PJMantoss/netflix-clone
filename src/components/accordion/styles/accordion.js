@@ -55,15 +55,15 @@ export const Header = styled.header`
 
     @media(max-width: 600px){
         font-size: 16px;
+    }
+
+    img {
+        filter: brightness(0) invert(1);
         width: 24px;
 
         @media(max-width: 600px){
             font-size: 16px;
         }
-    }
-
-    img {
-        filter: brightness(0) invert(1);
     }
 `;
 
