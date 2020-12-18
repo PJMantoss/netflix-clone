@@ -13,7 +13,9 @@ export const Inner = styled.div`
     margin: auto;
 `;
 
-export const Frame = styled.div``;
+export const Frame = styled.div`
+    margin-bottom: 40px;
+`;
 
 export const Item = styled.div`
     color: white;
