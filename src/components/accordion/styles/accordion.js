@@ -42,6 +42,7 @@ export const Title = styled.h1`
 export const Header = styled.header`
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
     cursor: pointer;
     margin-bottom: 1px;
     font-size: 26px;
@@ -58,6 +59,7 @@ export const Header = styled.header`
 `;
 
 export const Body = styled.body`
+    box-sizing: border-box;
     transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
     font-size: 26px;
     line-height: normal;
