@@ -43,7 +43,8 @@ export const Header = styled.header`
     font-weight: normal;
     background: #303030;
     padding: 0.8em 1.2em;
-    
+    user-select: none;
+    align-items: center;
 `;
 
 export const Body = styled.body``;
