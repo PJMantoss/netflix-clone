@@ -30,6 +30,7 @@ Accordion.Title = function AccordionTitle({ children, ...restProps }){
 }
 
 Accordion.Header = function AccordionHeader({ children, ...restProps }){
+    const {toggleShow, setToggleShow} = useContext(ToggleContext)
     return <Header {...restProps}>{children}</Header>
 }
 
