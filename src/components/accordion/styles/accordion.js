@@ -28,6 +28,10 @@ export const Title = styled.h1`
     margin: 0 0 8px 0;
     color: white;
     text-align: center;
+
+    @media (max-width: 600px){
+        font-size: 35px;
+    }
 `;
 
 export const Header = styled.header``;
