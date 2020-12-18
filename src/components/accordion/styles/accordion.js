@@ -56,4 +56,9 @@ export const Body = styled.body`
     padding: 0.8em 1.2em;
     user-select: none;
     align-items: center;
+
+    @media(max-width: 600px){
+        font-size: 16px;
+        line-height: 22px;
+    }
 `;
