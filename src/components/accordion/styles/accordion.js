@@ -41,6 +41,9 @@ export const Header = styled.header`
     margin-bottom: 1px;
     font-size: 26px;
     font-weight: normal;
+    background: #303030;
+    padding: 0.8em 1.2em;
+    
 `;
 
 export const Body = styled.body``;
