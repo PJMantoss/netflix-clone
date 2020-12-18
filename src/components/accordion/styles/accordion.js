@@ -47,4 +47,9 @@ export const Header = styled.header`
     align-items: center;
 `;
 
-export const Body = styled.body``;
+export const Body = styled.body`
+    max-width: 1200px;
+    font-size: 26px;
+    line-height: normal;
+
+`;
