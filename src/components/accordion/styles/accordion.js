@@ -34,6 +34,13 @@ export const Title = styled.h1`
     }
 `;
 
-export const Header = styled.header``;
+export const Header = styled.header`
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 1px;
+    font-size: 26px;
+    font-weight: normal;
+`;
 
 export const Body = styled.body``;
