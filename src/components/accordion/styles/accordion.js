@@ -51,5 +51,9 @@ export const Body = styled.body`
     max-width: 1200px;
     font-size: 26px;
     line-height: normal;
-
+    font-weight: normal;
+    background: #303030;
+    padding: 0.8em 1.2em;
+    user-select: none;
+    align-items: center;
 `;
