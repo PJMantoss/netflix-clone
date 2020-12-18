@@ -9,9 +9,14 @@ export const Inner = styled.div`
     display: flex;
     padding: 70px 45px;
     flex-direction: column;
+    max-width: 815px;
+    margin: auto;
 `;
 
-export const Item = styled.div``;
+export const Item = styled.div`
+    color: white;
+    margin-bottom: 10px;
+`;
 
 export const Title = styled.h1``;
 
