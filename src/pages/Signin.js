@@ -13,7 +13,7 @@ export default function Signin(){
         //call in firebase to handle authentication
         //if there's an error, populate the error state
     }
-
+ //form validation
     const isInvalid = password === '' | emailAddress === '';
 
     return(
