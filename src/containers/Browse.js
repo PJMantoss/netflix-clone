@@ -6,9 +6,17 @@ import { FooterContainer } from '../containers/Footer';
 import { selectProfileContainer } from './Profiles';
 
 export function BrowseContainer(){
-    const [profile, setProfile] = useState('');
+    const [profile, setProfile] = useState({});
 
-    const user = {}
+    const user = {
+        displayName: "Carl",
+        photoURL: "1"
+    }
 
-    return()
+    return profile.displayName ? (
+        <>
+           <p>Browse Container</p>
+           <FooterContainer>
+        </>
+    ) : (<SelectProfileContainer />)
 }
