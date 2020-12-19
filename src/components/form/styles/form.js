@@ -31,4 +31,8 @@ export const Submit = styled.button``;
 export const Error = styled.div`
     background: #e87c03;
     color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    margin: 0 0 16px;
+    padding: 15px 20px;
 `;
