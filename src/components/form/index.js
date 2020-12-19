@@ -21,6 +21,10 @@ Form.TextSmall = function FormTextSmall({ children, ...restProps }){
     return <TextSmall {...restProps}>{ children }</TextSmall>
 }
 
+Form.Base = function FormBase({ children, ...restProps }){
+    return <Base {...restProps}>{ children }</Base>
+}
+
 Form.Submit = function FormSubmit({ children, ...restProps }){
     return <Submit {...restProps}>{ children }</Submit>
 }
