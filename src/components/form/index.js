@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Input, Button } from './styles/form';
+import { Container, Input, Submit } from './styles/form';
 
 export default function Form({ children, ...restProps }){
     return <Container {...restProps}>{children}</Container>
@@ -9,6 +9,18 @@ Form.Input = function FormInput({ ...restProps }){
     return <Input {...restProps}/>
 }
 
-Form.Button = function FormButton({ children, ...restProps }){
-    return <Button {...restProps}>{ children }</Button>
+Form.Title = function FormTitle({ children, ...restProps }){
+    return <Title {...restProps}>{ children }</Title>
+}
+
+Form.Text = function FormText({ children, ...restProps }){
+    return <Text {...restProps}>{ children }</Text>
+}
+
+Form.TextSmall = function FormTextSmall({ children, ...restProps }){
+    return <TextSmall {...restProps}>{ children }</TextSmall>
+}
+
+Form.Submit = function FormSubmit({ children, ...restProps }){
+    return <Submit {...restProps}>{ children }</Submit>
 }

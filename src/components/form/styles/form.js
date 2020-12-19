@@ -4,4 +4,4 @@ export const Container = styled.div``;
 
 export const Input = styled.input``;
 
-export const Button = styled.button``;
+export const Submit = styled.button``;
