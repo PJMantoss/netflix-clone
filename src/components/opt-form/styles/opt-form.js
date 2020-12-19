@@ -6,6 +6,11 @@ export const Container = styled.div`
     justify-content: center;
     height: 100%;
     margin-top: 20px;
+
+    @media(max-width: 1000px){
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 export const Input = styled.input``;
