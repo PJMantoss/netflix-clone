@@ -3,7 +3,7 @@ import { Form } from '../components';
 import { HeaderContainer } from '../containers/Header';
 
 export default function Signin(){
-    const [] = useState('');
+    const [error, setError] = useState('');
     return(
         <HeaderContainer>
             <Form>
