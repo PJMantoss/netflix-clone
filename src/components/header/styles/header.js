@@ -51,6 +51,11 @@ export const ButtonLink = styled(ReachRouterLink)`
     width: 84px;
     height: fit-content;
     border: 0;
+    font-size: 15px;
+    border-radius: 3px;
+    padding: 8px 17px;
+    cursor: pointer;
+    text-decoration: none;
 `;
 
 export const Logo = styled.img`
