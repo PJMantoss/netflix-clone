@@ -5,11 +5,11 @@ import { FooterContainer } from '../containers/Footer';
 import * as ROUTES from '../constants/routes';
 
 export default function Signup(){
-    //states
+    //initialize states
     const [firstName, setFirstName] = useSate('');
     const [emailAddress, setEmailAddress] = useSate('');
-    const [firstName, setFirstName] = useSate('');
-    const [firstName, setFirstName] = useSate('');
+    const [password, setPassword] = useSate('');
+    const [error, setError] = useSate('');
 
     //form validation
     const isInvalid = firstName === '' | emailAddress === '' | password === '';
