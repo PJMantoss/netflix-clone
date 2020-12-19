@@ -39,7 +39,13 @@ export const Button = styled.input`
         filter: brightness(0) invert(1);
         width: 24px;
 
-        @media(max-width: 660px){}
+        @media(max-width: 900px){
+            width: 16px;
+        }
+    }
+
+    &:hover{
+        background: #f40612;
     }
 `;
 
