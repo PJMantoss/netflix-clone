@@ -65,7 +65,14 @@ export const Link = styled(ReachRouterLink)`
     }
 `;
 
-export const Submit = styled.button``;
+export const Submit = styled.button`
+    background: #e50914;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 4px;
+`;
 
 export const Error = styled.div`
     background: #e87c03;
