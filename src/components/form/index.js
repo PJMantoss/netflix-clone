@@ -8,3 +8,7 @@ export default function Form({ children, ...restProps }){
 Form.Input = function FormInput({ ...restProps }){
     return <Input {...restProps}/>
 }
+
+Form.Button = function FormButton({ children, ...restProps }){
+    return <Button {...restProps}>{}</Button>
+}
