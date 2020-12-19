@@ -50,11 +50,11 @@ export default function Signup(){
                     />
 
                     <Form.Submit disabled={isInvalid} type="submit">
-                        Sign In
+                        Sign Up
                     </Form.Submit>
 
                     <Form.Text>
-                        Already a user? <Form.Link to="/signin">Please Sign</Form.Link>
+                        Already a user? <Form.Link to="/signin">Please Sign In</Form.Link>
                     </Form.Text>
 
                     <Form.TextSmall>
