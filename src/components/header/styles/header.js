@@ -23,6 +23,10 @@ export const Container = styled.div`
     a {
         display: flex;
     }
+
+    @media (max-width: 1000px){
+        margin: 0 30px;
+    }
 `;
 
 export const Link = styled.p``;
