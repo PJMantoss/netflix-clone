@@ -13,6 +13,12 @@ export default function Signup(){
 
     //form validation
     const isInvalid = firstName === '' | emailAddress === '' | password === '';
+    
+    //Event handler
+    const handleSignup = (e) => {
+        e.preventDefault();
+    }
+
     return(
         <>
             <HeaderContainer></HeaderContainer>
