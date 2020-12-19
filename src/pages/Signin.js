@@ -17,6 +17,7 @@ export default function Signin(){
     const isInvalid = password === '' | emailAddress === '';
 
     return(
+        <>
         <HeaderContainer>
             <Form>
                 <Form.Title>Sign In</Form.Title>
@@ -52,5 +53,7 @@ export default function Signin(){
                 </Form.Base>
             </Form>
         </HeaderContainer>
+        <FooterContainer />
+        </>
     )
 }
