@@ -22,6 +22,11 @@ export const Input = styled.input`
     height: 70px;
 `;
 
-export const Button = styled.input``;
+export const Button = styled.input`
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background: #e50914;
+`;
 
 export const Text = styled.p``;
