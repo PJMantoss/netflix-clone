@@ -29,7 +29,10 @@ export const Container = styled.div`
     }
 `;
 
-export const Link = styled.p``;
+export const Link = styled.p`
+    color: #fff;
+    text-decoration: none;
+`;
 
 export const ButtonLink = styled(ReachRouterLink)``;
 
