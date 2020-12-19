@@ -27,6 +27,13 @@ export const Input = styled.input`
     border: 0;
     border-radius: 4px;
     height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+
+    &:last-of-type{
+        margin-bottom: 30px;
+    }
 `;
 
 export const Title = styled.h1`
