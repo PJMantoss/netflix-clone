@@ -72,6 +72,8 @@ export const Submit = styled.button`
     font-weight: bold;
     border: 0;
     border-radius: 4px;
+    margin: 0 0 12px;
+    padding: 16px;
 `;
 
 export const Error = styled.div`
