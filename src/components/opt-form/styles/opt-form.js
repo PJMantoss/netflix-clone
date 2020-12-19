@@ -47,6 +47,13 @@ export const Button = styled.input`
     &:hover{
         background: #f40612;
     }
+
+    @media(max-width: 900px){
+        height: 50px;
+        font-size: 16px;
+    }
 `;
 
-export const Text = styled.p``;
+export const Text = styled.p`
+    
+`;
