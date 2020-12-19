@@ -14,12 +14,6 @@ export function FaqsContainer(){
                 </Accordion.Item>
             ))}
             </Accordion.Frame>
-
-            <OptForm>
-                <OptForm.Input placeholder="E-mail Address" />
-                <OptForm.Button>Try it now</OptForm.Button>
-                <OptForm.Text>Ready to watch? Enter your e-mail to create or re-start your membership.</OptForm.Text>
-            </OptForm>
         </Accordion>
     )
 }
