@@ -11,7 +11,7 @@ export default function Home(){
             <HeaderContainer>
                 <OptForm>
                     <Feature>
-                        <Feature.Title></Feature.Title>
+                        <Feature.Title>Unlimited Films, TV Programmes and More.</Feature.Title>
                         <Feature.SubTitle></Feature.SubTitle>
                     </Feature>
                     <OptForm.Input placeholder="E-mail Address" />
