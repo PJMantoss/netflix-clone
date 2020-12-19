@@ -23,7 +23,12 @@ export const Base = styled.form`
 
 export const Input = styled.input``;
 
-export const Title = styled.h1``;
+export const Title = styled.h1`
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 28px;
+`;
 
 export const Text = styled.h1``;
 
