@@ -5,6 +5,7 @@ import { HeaderContainer } from '../containers/Header';
 export default function Signin(){
     const [error, setError] = useState('');
     const [emailAddress, setEmailAddress] = useState('');
+    const [password, setPassword] = useState('');
 
     const handleSignin = (e) => {
         e.preventDefault();
@@ -21,7 +22,8 @@ export default function Signin(){
                 {error && <Form.Error>{error}</Form.Error>}
 
                 <Form.Base onSubmit={handleSignin} method="POST">
-                    <Form.Input 
+                    <Form.Input
+                        type="email" 
                         onChange={({ target }) => setEmailAddress(target.value)} 
                         value={emailAddress} 
                         placeholder={} 
