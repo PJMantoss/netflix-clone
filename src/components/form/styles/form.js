@@ -13,6 +13,8 @@ export const Text = styled.h1``;
 
 export const TextSmall = styled.p``;
 
+export const Link = styled(ReachRouterLink)``;
+
 export const Submit = styled.button``;
 
 export const Error = styled.div``;
