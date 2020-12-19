@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './pages/Home';
+import {Home, Signin} from './pages';
 import * as ROUTES from './constants/routes';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
@@ -8,11 +8,11 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path={ROUTES.HOME}>
+        <Route exact path={ROUTES.HOME}>
             <Home />
         </Route>
         <Route path={ROUTES.SIGN_IN}>
-            <h2>Sign In Page</h2>
+            <Signin />
         </Route>
         <Route path={ROUTES.SIGN_UP}>
             <h2>Sign Up Page</h2>

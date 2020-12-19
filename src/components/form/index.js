@@ -6,7 +6,8 @@ import {
     Text, 
     TextSmall, 
     Base, 
-    Error, 
+    Error,
+    Link, 
     Submit 
 } from './styles/form';
 
