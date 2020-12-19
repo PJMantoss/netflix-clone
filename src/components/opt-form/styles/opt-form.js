@@ -7,7 +7,7 @@ export const Container = styled.div`
     height: 100%;
     margin-top: 20px;
 
-    @media(max-width: 1000px){
+    @media(max-width: 900px){
         flex-direction: column;
         align-items: center;
     }
@@ -37,6 +37,9 @@ export const Button = styled.input`
     img {
         margin-left: 10px;
         filter: brightness(0) invert(1);
+        width: 24px;
+
+        @media(max-width: 660px){}
     }
 `;
 
