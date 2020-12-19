@@ -14,10 +14,10 @@ function App() {
         <Route path={ROUTES.SIGN_IN}>
             <h2>Sign In Page</h2>
         </Route>
-        <Route path="/signup">
+        <Route path={ROUTES.SIGN_UP}>
             <h2>Sign Up Page</h2>
         </Route>
-        <Route path="/browse">
+        <Route path={ROUTES.BROWSE}>
             <h2>Browse Page</h2>
         </Route>
       </Switch>
