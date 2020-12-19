@@ -17,8 +17,8 @@ export function FaqsContainer(){
 
             <OptForm>
                 <OptForm.Input />
-                <OptForm.Button>Try it Now</OptForm.Button>
-                <OptForm.Text></OptForm.Text>
+                <OptForm.Button>Try it now</OptForm.Button>
+                <OptForm.Text>Ready to watch? Enter your e-mail to create or re-start your membership</OptForm.Text>
             </OptForm>
         </Accordion>
     )
