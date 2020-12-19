@@ -13,7 +13,7 @@ export default function Signin(){
         //if there's an error, populate the error state
     }
 
-    const handleChange = () => {}
+    const isInvalid = password === '' | emailAddress === '';
 
     return(
         <HeaderContainer>
@@ -37,7 +37,7 @@ export default function Signin(){
                         placeholder="Password" 
                     />
 
-                    <Form.Submit disabled={false} type="submit">
+                    <Form.Submit disabled={isInvalid} type="submit">
                         Sign In
                     </Form.Submit>
 
