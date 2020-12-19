@@ -10,6 +10,8 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
     color: white;
+    max-width: 650px;
+    font-size: 50px;
 `;
 
 export const SubTitle = styled.h2``;
