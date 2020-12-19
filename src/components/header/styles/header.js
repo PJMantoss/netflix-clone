@@ -47,7 +47,10 @@ export const Link = styled.p`
 export const ButtonLink = styled(ReachRouterLink)`
     display: block;
     background: #e50914;
-    
+    color: white;
+    width: 84px;
+    height: fit-content;
+    border: 0;
 `;
 
 export const Logo = styled.img`
