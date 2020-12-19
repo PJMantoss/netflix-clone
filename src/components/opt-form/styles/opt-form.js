@@ -57,7 +57,12 @@ export const Button = styled.input`
 `;
 
 export const Text = styled.p`
-    font-size: 19px;
+    font-size: 20px;
     color: white;
     text-align: center;
+
+    @media(max-width: 600px){
+        font-size: 16px;
+        line-height: 22px;
+    }
 `;
