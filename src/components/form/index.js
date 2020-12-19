@@ -10,5 +10,5 @@ Form.Input = function FormInput({ ...restProps }){
 }
 
 Form.Button = function FormButton({ children, ...restProps }){
-    return <Button {...restProps}>{}</Button>
+    return <Button {...restProps}>{ children }</Button>
 }
