@@ -74,6 +74,11 @@ export const Submit = styled.button`
     border-radius: 4px;
     margin: 0 0 12px;
     padding: 16px;
+    cursor: pointer;
+
+    &:disabled {
+        opacity: 0.5;
+    }
 `;
 
 export const Error = styled.div`
