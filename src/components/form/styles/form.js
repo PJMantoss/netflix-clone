@@ -36,7 +36,12 @@ export const Text = styled.h1`
     font-weight: 500;
 `;
 
-export const TextSmall = styled.h2``;
+export const TextSmall = styled.h2` 
+      font-size: 13px;
+      color: #8c8c8c;
+      line-height: normal;
+      margin-top: 10px;
+`;
 
 export const Link = styled(ReachRouterLink)``;
 
