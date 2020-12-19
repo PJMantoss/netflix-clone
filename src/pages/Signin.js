@@ -16,8 +16,12 @@ export default function Signin(){
                 <Form.Title>Sign In</Form.Title>
                 {error && <Form.Error>{error}</Form.Error>}
 
-                <Form.Base onSubmit={}>
-                    <Form.Input onChange={} value={} placeholder={} />
+                <Form.Base onSubmit={handleChange}>
+                    <Form.Input 
+                        onChange={() => ()} 
+                        value={} 
+                        placeholder={} 
+                    />
                 </Form.Base>
             </Form>
         </HeaderContainer>
