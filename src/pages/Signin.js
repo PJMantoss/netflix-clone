@@ -26,8 +26,20 @@ export default function Signin(){
                         type="email" 
                         onChange={({ target }) => setEmailAddress(target.value)} 
                         value={emailAddress} 
-                        placeholder={} 
+                        placeholder="Email" 
                     />
+
+                    <Form.Input
+                        type="password" 
+                        onChange={({ target }) => setPassword(target.value)} 
+                        value={password} 
+                        autocomplete="off"
+                        placeholder="Password" 
+                    />
+
+                    <Form.Submit disabled={false} type="submit">
+                        Sign In
+                    </Form.Submit>
                 </Form.Base>
             </Form>
         </HeaderContainer>
