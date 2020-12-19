@@ -12,4 +12,9 @@ export const Link = styled.p``;
 
 export const ButtonLink = styled(ReachRouterLink)``;
 
-export const Logo = styled.img``;
+export const Logo = styled.img`
+    height: 32px;
+    width: 108px;
+    margin-right: 40px;
+    
+`;
