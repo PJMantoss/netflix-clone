@@ -30,7 +30,9 @@ export const Button = styled.input`
     color: white;
     text-transform: uppercase;
     padding: 0 32px;
-    
+    font-size: 26px;
+    border: 0;
+    cursor: pointer;
 `;
 
 export const Text = styled.p``;
