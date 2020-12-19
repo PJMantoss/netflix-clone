@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import { GlobalStyles } from './globalStyles';
 import { FirebaseContext } from './context/firebase';
-import reportWebVitals from './reportWebVitals';
 
 const config = {
     apiKey: "AIzaSyDfowjadOlRQoqWGOVC6jjbhWuy31fivyc",
@@ -27,5 +26,3 @@ ReactDOM.render(
   </>,
   document.getElementById('root')
 );
-
-reportWebVitals();
