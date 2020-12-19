@@ -7,3 +7,9 @@ export default function Header({ bg = true, children, ...restProps }){
         bg ? <Background {...restProps}>{children}</Background> : children
     )
 }
+
+Header.Frame = function HeaderFrame({}){};
+
+Header.Logo = function HeaderLogo({}){};
+
+Header.ButtonLink = function HeaderButtonLink({}){}
