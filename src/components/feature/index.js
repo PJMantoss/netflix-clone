@@ -1,5 +1,5 @@
 import React from 'react';
-import {  } from './styles/feature';
+import { Container, Title, SubTitle } from './styles/feature';
 import { SubTitle } from '../jumbotron/styles/jumbotron';
 
 export default function Feature({ children, ...restProps }){
