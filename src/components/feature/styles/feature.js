@@ -8,6 +8,8 @@ export const Container = styled.div`
     padding: 165px 45px;
 `;
 
-export const Title = styled.h1``;
+export const Title = styled.h1`
+    color: white;
+`;
 
 export const SubTitle = styled.h2``;
