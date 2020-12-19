@@ -40,6 +40,10 @@ export default function Signin(){
                     <Form.Submit disabled={false} type="submit">
                         Sign In
                     </Form.Submit>
+
+                    <Form.Text></Form.Text>
+
+                    <Form.TextSmall></Form.TextSmall>
                 </Form.Base>
             </Form>
         </HeaderContainer>
