@@ -21,7 +21,13 @@ export const Base = styled.form`
     max-width: 450px;
 `;
 
-export const Input = styled.input``;
+export const Input = styled.input`
+    background: #333;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    height: 50px;
+`;
 
 export const Title = styled.h1`
     color: #fff;
@@ -43,7 +49,14 @@ export const TextSmall = styled.h2`
       margin-top: 10px;
 `;
 
-export const Link = styled(ReachRouterLink)``;
+export const Link = styled(ReachRouterLink)`
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        text-decoration: underline;
+    }
+`;
 
 export const Submit = styled.button``;
 
