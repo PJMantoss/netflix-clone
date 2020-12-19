@@ -25,6 +25,10 @@ Form.Base = function FormBase({ children, ...restProps }){
     return <Base {...restProps}>{ children }</Base>
 }
 
+Form.Link = function FormLink({ children, ...restProps }){
+    return <Link {...restProps}>{ children }</Link>
+}
+
 Form.Error = function FormError({ children, ...restProps }){
     return <Error {...restProps}>{ children }</Error>
 }
