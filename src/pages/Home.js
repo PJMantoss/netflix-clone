@@ -9,15 +9,15 @@ export default function Home(){
     return(
         <>
             <HeaderContainer>
-                <OptForm>
-                    <Feature>
-                        <Feature.Title>Unlimited Films, TV Programmes and More.</Feature.Title>
-                        <Feature.SubTitle>Watch anywhere. Cancel at anytime</Feature.SubTitle>
+                <Feature>               
+                    <Feature.Title>Unlimited Films, TV Programmes and More.</Feature.Title>
+                    <Feature.SubTitle>Watch anywhere. Cancel at anytime</Feature.SubTitle>
+                    <OptForm>
                         <OptForm.Input placeholder="E-mail Address" />
                         <OptForm.Button>Try it now</OptForm.Button>
                         <OptForm.Text>Ready to watch? Enter your e-mail to create or re-start your membership.</OptForm.Text>
-                    </Feature>
-                </OptForm>
+                    </OptForm>
+                </Feature>
             </HeaderContainer>
 
             <JumbotronContainer />
