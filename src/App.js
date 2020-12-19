@@ -8,10 +8,10 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/">
+        <Route path={ROUTES.HOME}>
             <Home />
         </Route>
-        <Route path="/signin">
+        <Route path={ROUTES.SIGN_IN}>
             <h2>Sign In Page</h2>
         </Route>
         <Route path="/signup">
