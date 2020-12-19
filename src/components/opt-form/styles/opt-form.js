@@ -57,5 +57,7 @@ export const Button = styled.input`
 `;
 
 export const Text = styled.p`
-    
+    font-size: 19px;
+    color: white;
+    text-align: center;
 `;
