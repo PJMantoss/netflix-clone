@@ -14,7 +14,12 @@ export const Container = styled.section`
     padding: 60px 68px 40px;
 `;
 
-export const Base = styled.form``;
+export const Base = styled.form`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+`;
 
 export const Input = styled.input``;
 
