@@ -4,6 +4,7 @@ import { HeaderContainer } from '../containers/Header';
 
 export default function Signin(){
     const [error, setError] = useState('');
+    const [emailAddress, setEmailAddress] = useState('');
 
     const handleChange = () => {
         //call in firebase to handle authentication
@@ -18,8 +19,8 @@ export default function Signin(){
 
                 <Form.Base onSubmit={handleChange}>
                     <Form.Input 
-                        onChange={() => ()} 
-                        value={} 
+                        onChange={() => setEmailAddress(target.value)} 
+                        value={emailAddress} 
                         placeholder={} 
                     />
                 </Form.Base>
