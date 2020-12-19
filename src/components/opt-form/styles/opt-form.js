@@ -51,6 +51,8 @@ export const Button = styled.input`
     @media(max-width: 900px){
         height: 50px;
         font-size: 16px;
+        margin-top: 20px;
+        font-weight: bold;
     }
 `;
 
