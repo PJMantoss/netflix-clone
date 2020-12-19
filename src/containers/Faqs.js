@@ -15,7 +15,11 @@ export function FaqsContainer(){
             ))}
             </Accordion.Frame>
 
-            <OptForm></OptForm>
+            <OptForm>
+                <OptForm.Input />
+                <OptForm.Button>Try it Now</OptForm.Button>
+                <OptForm.Text></OptForm.Text>
+            </OptForm>
         </Accordion>
     )
 }
