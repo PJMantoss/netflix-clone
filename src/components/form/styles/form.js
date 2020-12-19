@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 import { Link as ReachRouterLink } from 'react-router-dom';
 
-export const Container = styled.section``;
+export const Container = styled.section`
+    display: flex;
+    flex-direction: column;
+    min-height: 660px;
+`;
 
 export const Base = styled.form``;
 
