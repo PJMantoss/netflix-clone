@@ -6,10 +6,13 @@ export default function Signin(){
     const [error, setError] = useState('');
     const [emailAddress, setEmailAddress] = useState('');
 
-    const handleChange = () => {
+    const handleSignin = (e) => {
+        e.preventDefault();
         //call in firebase to handle authentication
         //if there's an error, populate the error state
     }
+
+    const handleChange = () => {}
 
     return(
         <HeaderContainer>
@@ -17,9 +20,9 @@ export default function Signin(){
                 <Form.Title>Sign In</Form.Title>
                 {error && <Form.Error>{error}</Form.Error>}
 
-                <Form.Base onSubmit={handleChange}>
+                <Form.Base onSubmit={handleSignin} method="POST">
                     <Form.Input 
-                        onChange={() => setEmailAddress(target.value)} 
+                        onChange={({ target }) => setEmailAddress(target.value)} 
                         value={emailAddress} 
                         placeholder={} 
                     />
