@@ -17,6 +17,12 @@ export const Container = styled.div`
     margin: 0 56px;
     height: 64px;
     padding: 18px 0;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        display: flex;
+    }
 `;
 
 export const Link = styled.p``;
