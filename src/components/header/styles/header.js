@@ -35,9 +35,20 @@ export const Link = styled.p`
     margin-right: 30px;
     font-weight: ${({ active }) => (active === 'true' ? '700' : 'normal')};
     cursor: pointer;
+
+    &:hover{
+        font-weight: bold;
+    }
+    &:last-of-type {
+        margin-right: 0;
+    }
 `;
 
-export const ButtonLink = styled(ReachRouterLink)``;
+export const ButtonLink = styled(ReachRouterLink)`
+    display: block;
+    background: #e50914;
+    
+`;
 
 export const Logo = styled.img`
     height: 32px;
