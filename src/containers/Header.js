@@ -5,7 +5,10 @@ import * as ROUTES from '../constants/routes';
 export function HeaderContainer({}){
     return(
         <Header>
-            <Header.Frame></Header.Frame>
+            <Header.Frame>
+                <Header.Logo to={ROUTES.HOME} />
+                <Header.ButtonLink></Header.ButtonLink>
+            </Header.Frame>
             {children}
         </Header>
     )
