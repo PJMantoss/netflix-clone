@@ -12,7 +12,9 @@ export const Background = styled.section`
     }
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+    display: flex;
+`;
 
 export const Link = styled.p``;
 
