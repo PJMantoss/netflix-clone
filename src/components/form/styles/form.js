@@ -30,7 +30,11 @@ export const Title = styled.h1`
     margin-bottom: 28px;
 `;
 
-export const Text = styled.h1``;
+export const Text = styled.h1`
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+`;
 
 export const TextSmall = styled.h2``;
 
