@@ -32,6 +32,7 @@ export const Container = styled.div`
 export const Link = styled.p`
     color: #fff;
     text-decoration: none;
+    margin-right: 30px;
 `;
 
 export const ButtonLink = styled(ReachRouterLink)``;
