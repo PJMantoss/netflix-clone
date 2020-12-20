@@ -16,7 +16,10 @@ export function SelectProfileContainer({}){
                 </Header.Frame>
             </Header>
 
-            <Profiles></Profiles>
+            <Profiles>
+                <Profiles.Title></Profiles.Title>
+                <Profiles.List></Profiles.List>
+            </Profiles>
         </>
     )
 }
