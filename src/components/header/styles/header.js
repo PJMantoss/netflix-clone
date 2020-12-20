@@ -158,3 +158,21 @@ export const SearchInput = styled.input`
     opacity: ${({ active }) => (active === true ? '1' : '0')};
     width: ${({ active }) => (active === true ? '200px' : '0')};
 `;
+
+export const Picture = styled.button`
+    background: url(${({ src }) => src});
+    background-size: contain;
+    border: 0;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+`;
+
+export const DropDown = styled.div``;
+
+export const Profile = styled.div`
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    position: relative;
+`;
