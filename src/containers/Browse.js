@@ -46,11 +46,13 @@ export function BrowseContainer(){
                           <Header.Dropdown>
                               <Header.Group>
                                 <Header.Picture src={user.photoURL} />
-                                <Header.TextLink>{user.displayName}</Header.TextLink>
+                                <Header.Link>{user.displayName}</Header.Link>
                               </Header.Group>
 
                               <Header.Group>
-                                  <Header.TextLink></Header.TextLink>
+                                  <Header.Link onClick={() => firebase.auth().signOut()}>
+                                      Sign Out
+                                  </Header.Link>
                               </Header.Group>
                           </Header.Dropdown>
                       </Header.Profile>
