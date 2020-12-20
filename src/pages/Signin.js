@@ -8,7 +8,7 @@ import { useHistory } from 'react-router-dom';
 export default function Signin(){
     const history = useHistory();
     const { firebase } = useContext(FirebaseContext);
-    
+
     //initialize state values
     const [error, setError] = useState('');
     const [emailAddress, setEmailAddress] = useState('');
@@ -21,13 +21,7 @@ export default function Signin(){
 
         firebase
             .auth()
-            .createUserWithEmailAndPassword(emailAddress, password)
-            .then(result => 
-                result.user
-                .updateProfile({
-                    displayName: firstName,
-                    photoURL: Math.floor(Math.random() * 5) + 1,
-                }))
+            .signInWithEmailAndPassword(emailAddress, password)
             .then(() => {
                 setEmailAddress('');
                 setPassword('');
@@ -36,6 +30,7 @@ export default function Signin(){
             })
             .catch(err => setError(err.message));
     }
+    
  //form validation
     const isInvalid = password === '' | emailAddress === '';
 
