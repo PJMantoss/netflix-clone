@@ -23,6 +23,7 @@ export function BrowseContainer(){
           <Header src="joker1" dontShowOnSmallViewPort>
               <Header.Frame>
                   <Header.Group>
+                      <Header.Logo to={ROUTES.BROWSE} src="./images/misc/logo.svg" alt="Netflix" />
                       <Header.Link 
                           active={category === 'series' ? true : false} 
                           onClick={() => setCategory('series')}
@@ -38,6 +39,8 @@ export function BrowseContainer(){
                        </Header.Link>
                   </Header.Group>
               </Header.Frame>
+
+              <Header.Feature></Header.Feature>
           </Header>
           <FooterContainer />
           </>) 
