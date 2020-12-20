@@ -26,6 +26,14 @@ export const List = styled.ul`
 
 export const Item = styled.li``;
 
-export const Name = styled.p``;
+export const Name = styled.p`
+    font-size: 16px;
+    color: #808080;
+    text-overflow: ellipsis;
+
+    &:hover {
+        font-weight:
+    }
+`;
 
 export const Picture = styled.img``;
