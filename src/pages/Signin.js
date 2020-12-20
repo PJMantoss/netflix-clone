@@ -4,15 +4,16 @@ import { HeaderContainer } from '../containers/Header';
 import { FooterContainer } from '../containers/Footer';
 import { FirebaseContext } from '../context/firebase';
 import { useHistory } from 'react-router-dom';
+import * as ROUTES from '../constants/routes';
 
 export default function Signin(){
     const history = useHistory();
     const { firebase } = useContext(FirebaseContext);
 
     //initialize state values
-    const [error, setError] = useState('');
     const [emailAddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
 
     const handleSignin = (e) => {
         e.preventDefault();
@@ -30,7 +31,7 @@ export default function Signin(){
             })
             .catch(err => setError(err.message));
     }
-    
+
  //form validation
     const isInvalid = password === '' | emailAddress === '';
 
