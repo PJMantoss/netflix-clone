@@ -9,7 +9,12 @@ export const Container = styled.div`
     max-width: 80%;
 `;
 
-export const Title = styled.h1``;
+export const Title = styled.h1`
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+`;
 
 export const User = styled.div``;
 
