@@ -13,10 +13,5 @@ export function BrowseContainer(){
         photoURL: "1"
     }
 
-    return profile.displayName ? (
-        <>
-           <p>Browse Container</p>
-           <FooterContainer>
-        </>
-    ) : (<SelectProfileContainer />)
+    return (profile.displayName ? (<div><p>Browse Container</p><FooterContainer></div>) : (<SelectProfileContainer />))
 }
