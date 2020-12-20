@@ -32,7 +32,8 @@ export const Name = styled.p`
     text-overflow: ellipsis;
 
     &:hover {
-        font-weight:
+        font-weight: bold;
+        color: #e5e5e5;
     }
 `;
 
