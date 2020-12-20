@@ -1,5 +1,5 @@
 import React from 'react';
-import {Home, Signin, Signup} from './pages';
+import {Home, Browse, Signin, Signup} from './pages';
 import * as ROUTES from './constants/routes';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
@@ -18,7 +18,7 @@ function App() {
             <Signup />
         </Route>
         <Route path={ROUTES.BROWSE}>
-            <h2>Browse Page</h2>
+            <Browse Page />
         </Route>
       </Switch>
     </Router>
