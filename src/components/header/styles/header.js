@@ -8,7 +8,7 @@ export const Background = styled.section`
     '../images/misc/home-bg.jpg')}) top left / cover no-repeat;
 
     @media(max-width: 1100px){
-        ${({ dontShowOnSmallViewport }) => dontShowOnSmallViewport && `background: none`}
+        ${({ dontShowOnSmallViewPort }) => dontShowOnSmallViewPort && `background: none`}
     }
 `;
 

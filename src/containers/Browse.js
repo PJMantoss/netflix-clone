@@ -7,9 +7,11 @@ import { SelectProfileContainer } from './Profiles';
 
 export function BrowseContainer(){
     //initialize state
-    const [category, setCategory] = useState(series)
+    const [category, setCategory] = useState('series')
     const [profile, setProfile] = useState({});
     const [loading, setLoading] = useState(true);
+
+    const { firebase } = useContext(FirebaseContext);
 
     const user = {
         displayName: "Carl",
@@ -17,7 +19,17 @@ export function BrowseContainer(){
     }
 
     return profile.displayName ? (
-          <><p>Browse Container</p>
+          <>
+          <Header src="joker1" dontShowOnSmallViewPort>
+              <Header.Frame>
+                  <Header.Group>
+                      <Header.Link 
+                          active={category === 'series' ? true : false} 
+                          onClick={}></Header.Link
+                       >
+                  </Header.Group>
+              </Header.Frame>
+          </Header>
           <FooterContainer />
           </>) 
           : (<SelectProfileContainer user={user} setProfile={setProfile} />)
