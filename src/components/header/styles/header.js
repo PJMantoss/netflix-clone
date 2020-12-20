@@ -74,4 +74,14 @@ export const Logo = styled.img`
     }
 `;
 
-export const Group = styled.div``;
+export const Group = styled.div`
+    display: flex;
+    align-items: center;
+`;
+
+export const Text = styled.p`
+    font-size: 22px;
+    line-height: normal;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.45);
+`;
