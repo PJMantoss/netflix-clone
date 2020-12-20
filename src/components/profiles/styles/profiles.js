@@ -24,7 +24,13 @@ export const List = styled.ul`
     flex-direction: row;
 `;
 
-export const Item = styled.li``;
+export const Item = styled.li`
+    max-height: 200px;
+    max-width: 200px;
+    list-style-type: none;
+    text-align: center;
+    margin-right: 30px;
+`;
 
 export const Name = styled.p`
     font-size: 16px;
@@ -40,5 +46,7 @@ export const Name = styled.p`
 export const Picture = styled.img`
     width: 100%;
     max-width: 150px;
-    
+    height: auto;
+    border: 3px solid #000;
+    cursor: pointer;
 `;
