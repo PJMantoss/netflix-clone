@@ -19,7 +19,7 @@ export function SelectProfileContainer({ user, setProfile }){
             <Profiles>
                 <Profiles.Title>Who is watching?</Profiles.Title>
                 <Profiles.List>
-                    <Profiles.User 
+                    <Profiles.Item 
                        onClick={() => setProfile({
                            displayName: user.displayName,
                            photoURL: user.photoURL
@@ -27,7 +27,7 @@ export function SelectProfileContainer({ user, setProfile }){
                     >
                         <Profiles.Picture src={user.photoURL} />
                         <Profiles.Name>{user.displayName}</Profiles.Name>
-                    </Profiles.User>
+                    </Profiles.Item>
                 </Profiles.List>
             </Profiles>
         </>

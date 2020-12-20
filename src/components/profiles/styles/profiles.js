@@ -25,6 +25,17 @@ export const Picture = styled.img`
     cursor: pointer;
 `;
 
+export const Name = styled.p`
+    font-size: 16px;
+    color: #808080;
+    text-overflow: ellipsis;
+
+    &:hover {
+        font-weight: bold;
+        color: #e5e5e5;
+    }
+`;
+
 export const List = styled.ul`
     padding: 0;
     margin: 0;
@@ -46,5 +57,9 @@ export const Item = styled.li`
     &:hover ${Name}{
         font-weight: bold;
         color: #fff;
+    }
+
+    &:last-of-type {
+        margin-right: 0;
     }
 `;
