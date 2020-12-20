@@ -17,7 +17,12 @@ export const Title = styled.h1`
     width: 100%;
 `;
 
-export const List = styled.ul``;
+export const List = styled.ul`
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+`;
 
 export const Item = styled.li``;
 
