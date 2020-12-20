@@ -12,6 +12,23 @@ export default function Signin(){
         e.preventDefault();
         //call in firebase to handle authentication
         //if there's an error, populate the error state
+
+        firebase
+            .auth()
+            .createUserWithEmailAndPassword(emailAddress, password)
+            .then(result => 
+                result.user
+                .updateProfile({
+                    displayName: firstName,
+                    photoURL: Math.floor(Math.random() * 5) + 1,
+                }))
+            .then(() => {
+                setEmailAddress('');
+                setPassword('');
+                setError('');
+                history.push(ROUTES.BROWSE);
+            })
+            .catch(err => setError(err.message));
     }
  //form validation
     const isInvalid = password === '' | emailAddress === '';
