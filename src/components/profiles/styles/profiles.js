@@ -17,6 +17,14 @@ export const Title = styled.h1`
     width: 100%;
 `;
 
+export const Picture = styled.img`
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border: 3px solid #000;
+    cursor: pointer;
+`;
+
 export const List = styled.ul`
     padding: 0;
     margin: 0;
@@ -30,23 +38,13 @@ export const Item = styled.li`
     list-style-type: none;
     text-align: center;
     margin-right: 30px;
-`;
 
-export const Name = styled.p`
-    font-size: 16px;
-    color: #808080;
-    text-overflow: ellipsis;
-
-    &:hover {
-        font-weight: bold;
-        color: #e5e5e5;
+    &:hover > ${Picture} {
+        border: 3px solid #fff;
     }
-`;
 
-export const Picture = styled.img`
-    width: 100%;
-    max-width: 150px;
-    height: auto;
-    border: 3px solid #000;
-    cursor: pointer;
+    &:hover ${Name}{
+        font-weight: bold;
+        color: #fff;
+    }
 `;
