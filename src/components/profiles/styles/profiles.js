@@ -7,3 +7,5 @@ export const Title = styled.h1``;
 export const List = styled.ul``;
 
 export const Item = styled.li``;
+
+export const User = styled.div``;
