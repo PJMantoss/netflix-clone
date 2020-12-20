@@ -73,3 +73,5 @@ export const Logo = styled.img`
         width: 167px;
     }
 `;
+
+export const Group = styled.div``;
