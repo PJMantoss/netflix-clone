@@ -17,8 +17,10 @@ export function SelectProfileContainer({}){
             </Header>
 
             <Profiles>
-                <Profiles.Title></Profiles.Title>
-                <Profiles.List></Profiles.List>
+                <Profiles.Title>Who is watching?</Profiles.Title>
+                <Profiles.List>
+                    <Profiles.User></Profiles.User>
+                </Profiles.List>
             </Profiles>
         </>
     )
