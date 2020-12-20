@@ -15,7 +15,7 @@ import {
     SearchIcon,
     SearchInput,
     Picture,
-    DropDown,
+    Dropdown,
     Profile 
 } from './styles/header';
 
@@ -86,8 +86,8 @@ Header.Picture = function HeaderPicture({ src, ...restProps }){
     return <Picture {...restProps} src={`./images/users/${src}.png`} />
 }
 
-Header.DropDown = function HeaderDropDown({ children, ...restProps }){
-    return <DropDown {...restProps}>{children}</DropDown>
+Header.Dropdown = function Headerdropdown({ children, ...restProps }){
+    return <Dropdown {...restProps}>{children}</Dropdown>
 }
 
 Header.Profile = function HeaderProfile({ children, ...restProps }){

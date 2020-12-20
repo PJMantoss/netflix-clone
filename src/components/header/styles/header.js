@@ -168,11 +168,20 @@ export const Picture = styled.button`
     cursor: pointer;
 `;
 
-export const DropDown = styled.div``;
+export const Dropdown = styled.div``;
 
 export const Profile = styled.div`
     display: flex;
     align-items: center;
     margin-left: 20px;
     position: relative;
+
+    button {
+        cursor: pointer;
+    }
+
+    &:hover > ${Dropdown}{
+        display: flex;
+        flex-direction: column;
+    }
 `;
