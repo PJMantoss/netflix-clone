@@ -8,7 +8,11 @@ export function SelectProfileContainer({}){
         <>
             <Header bg={false}>
                 <Header.Frame>
-                    <Header.Logo></Header.Logo>
+                    <Header.Logo 
+                        to={ROUTES.HOME} 
+                        src="./images/misc/logo.svg" 
+                        alt="Netflix" 
+                    />
                 </Header.Frame>
             </Header>
 
