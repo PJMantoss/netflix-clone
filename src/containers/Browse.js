@@ -48,6 +48,7 @@ export function BrowseContainer(){
                     futile attempt to feel like he's part of the world around him.
                   </Header.Text>
               </Header.Feature>
+              <Header.PlayButton>Play</Header.PlayButton>
           </Header>
           <FooterContainer />
           </>) 

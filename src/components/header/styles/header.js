@@ -85,3 +85,9 @@ export const Text = styled.p`
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.45);
 `;
+
+export const Feature = styled.div``;
+
+export const FeatureCallOut = styled.div``;
+
+export const PlayButton = styled.button``;
