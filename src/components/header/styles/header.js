@@ -86,8 +86,42 @@ export const Text = styled.p`
     text-shadow: 2px 2px 4px rgba(0,0,0,0.45);
 `;
 
-export const Feature = styled.div``;
+export const Feature = styled(Container)`
+    flex-direction: column;
+    padding: 150px 0 500px 0;
+    align-items: normal;
+    width: 50%;
 
-export const FeatureCallOut = styled.div``;
+    @media(max-width: 1100px){
+        display: none;
+    }
+`;
 
-export const PlayButton = styled.button``;
+export const FeatureCallOut = styled.div`
+    color: white;
+    font-size: 50px;
+    line-height: normal;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.45);
+    margin: 0;
+`;
+
+export const PlayButton = styled.button`
+    box-shadow: 0 0.6vw 1vw -0.4vw rgba(0,0,0,0.35);
+    background: #e6e6e6;
+    color: #000;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    max-width: 130px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.5s ease;
+
+    &:hover {
+        background: #ff1e1e;
+        color: #fff;
+    }
+`;
