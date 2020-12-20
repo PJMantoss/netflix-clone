@@ -37,4 +37,8 @@ export const Name = styled.p`
     }
 `;
 
-export const Picture = styled.img``;
+export const Picture = styled.img`
+    width: 100%;
+    max-width: 150px;
+    
+`;
