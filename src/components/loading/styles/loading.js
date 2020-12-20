@@ -1,5 +1,13 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
+export const Lockbody = createGlobalStyle`
+    overflow: hidden;
+`;
+
+export const ReleaseBody = createGlobalStyle`
+    overflow: visible;
+`;
+
 export const Spinner = styled.div`
     position: fixed;
     width: 100%;
@@ -60,14 +68,6 @@ export const Spinner = styled.div`
             transform: rotate(360deg);
         }
     }
-`;
-
-export const Lockbody = createGlobalStyle`
-    overflow: hidden;
-`;
-
-export const ReleaseBody = createGlobalStyle`
-    overflow: visible;
 `;
 
 export const Picture = styled.img`

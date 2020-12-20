@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Header, Loading } from '../components';
 import * as ROUTES from '../constants/routes';
 import { FirebaseContext } from '../context/firebase';
@@ -18,6 +18,12 @@ export function BrowseContainer(){
         displayName: "Carl",
         photoURL: "1"
     }
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false)
+        }, 10000);
+    }, [user])
 
     return profile.displayName ? (
           <>
