@@ -25,8 +25,17 @@ export function BrowseContainer(){
                   <Header.Group>
                       <Header.Link 
                           active={category === 'series' ? true : false} 
-                          onClick={}></Header.Link
+                          onClick={() => setCategory('series')}
                        >
+                            Series
+                       </Header.Link>
+
+                       <Header.Link 
+                          active={category === 'films' ? true : false} 
+                          onClick={() => setCategory('films')}
+                       >
+                            Films
+                       </Header.Link>
                   </Header.Group>
               </Header.Frame>
           </Header>
