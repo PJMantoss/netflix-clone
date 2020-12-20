@@ -14,9 +14,8 @@ export const Title = styled.h1`
     font-weight: 500;
     color: #fff;
     text-align: center;
+    width: 100%;
 `;
-
-export const User = styled.div``;
 
 export const List = styled.ul``;
 
