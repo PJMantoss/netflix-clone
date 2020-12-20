@@ -41,6 +41,19 @@ export function BrowseContainer(){
                   </Header.Group>
                   <Header.Group>
                       <Header.Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}></Header.Search>
+                      <Header.Profile>
+                          <Header.Picture src={user.photoURL} />
+                          <Header.Dropdown>
+                              <Header.Group>
+                                <Header.Picture src={user.photoURL} />
+                                <Header.TextLink>{user.displayName}</Header.TextLink>
+                              </Header.Group>
+
+                              <Header.Group>
+                                  <Header.TextLink></Header.TextLink>
+                              </Header.Group>
+                          </Header.Dropdown>
+                      </Header.Profile>
                   </Header.Group>
               </Header.Frame>
 

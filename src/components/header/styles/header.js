@@ -140,7 +140,7 @@ export const SearchIcon = styled.button`
     border: 0;
     cursor: pointer;
 
-    @media(){
+    img {
         width: 16px;
         filter: brightness(0) invert(1);
     }
