@@ -5,14 +5,15 @@ import App from './App';
 import { GlobalStyles } from './globalStyles';
 import { FirebaseContext } from './context/firebase';
 
+import { seedDatabase } from './seed';
+
 const config = {
-    apiKey: "AIzaSyDfowjadOlRQoqWGOVC6jjbhWuy31fivyc",
-    authDomain: "netflix-clone-22d37.firebaseapp.com",
-    databaseURL: "https://netflix-clone-22d37-default-rtdb.firebaseio.com",
-    projectId: "netflix-clone-22d37",
-    storageBucket: "netflix-clone-22d37.appspot.com",
-    messagingSenderId: "407949998477",
-    appId: "1:407949998477:web:bb9a9276cdacd66de6a5c4"
+  apiKey: "AIzaSyCcbmv1uDgd-65m-ZTmcERNNQts_ISprvI",
+  authDomain: "netflix-clone-1060f.firebaseapp.com",
+  projectId: "netflix-clone-1060f",
+  storageBucket: "netflix-clone-1060f.appspot.com",
+  messagingSenderId: "439093273428",
+  appId: "1:439093273428:web:a3f24f514cd7fd4fd55ec1"
 }
 
 const firebase = window.firebase.initializeApp(config);
