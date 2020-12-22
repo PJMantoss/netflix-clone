@@ -122,7 +122,10 @@ export const FeatureText = styled.p`
 export const Feature = styled.div`
     display: flex;
     flex-direction: row;
+    position: relative;
+    height: 360px;
     background: url(${({ src }) => src});
+    background-position-x: right;
     background-size: contain;
     background-color: #000;
     background-repeat: no-repeat;
@@ -144,7 +147,7 @@ export const Feature = styled.div`
 
 `;
 
-export const Content = styled.p`
+export const Content = styled.div`
     margin: 56px;
     max-width: 500px;
     line-height: normal;
@@ -175,7 +178,7 @@ export const FeatureTitle = styled(Title)`
 `;
 
 export const Maturity = styled.div`
-    background: ${({ rating }) => (rating => 15 ? "red" : "green")};
+    background: ${({ rating }) => (rating >= 15 ? "red" : "green")};
     border-radius: 15px;
     width: 20px;
     padding: 5px;
