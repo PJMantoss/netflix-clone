@@ -60,13 +60,15 @@ Card.Group = function CardGroup({ children, ...restProps }){
 
 Card.Item = function CardItem({ item, children, ...restProps }){
     const {setShowFeature, setItemFeature} = useContext(FeatureContext);
+
     return(
         <Item 
             onClick={() => {
                 setItemFeature(item);
                 setShowFeature(true);
             }} 
-            {...restProps}>
+            {...restProps}
+        >
             {children}
         </Item>
     )
