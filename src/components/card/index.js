@@ -1,4 +1,21 @@
 import React, { useState, useContext, createContext } from 'react';
+import { 
+    Container, 
+    Group, 
+    Title, 
+    SubTitle, 
+    Text,
+    Entities,
+    Meta,
+    Item,
+    Image,
+    Feature,
+    Content,
+    FeatureTitle,
+    FeatureClose,
+    FeatureText,
+    Maturity
+} from './styles/card';
 
 const FeatureContext = createContext();
 
@@ -79,7 +96,9 @@ Card.Feature = function CardFeature({ category, children, ...restProps }){
                         {itemFeature.genre.charAt(0).toUpperCase() + itemFeature.genre.slice(1)}
                     </FeatureText>
                 </Group>
+
+                {children}
             </Content>
         </Feature>
-    ) :
+    ) : null;
 }
