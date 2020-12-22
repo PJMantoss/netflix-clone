@@ -24,13 +24,41 @@ export const Container = styled.div`
     }
 `;
 
-export const Text = styled.p``;
+export const Text = styled.p`
+    font-size: 10px;
+    font-weight: bold;
+    display: none;
+    color: white;
+    margin: 0 auto;
+    line-height: normal;
+`;
 
-export const SubTitle = styled.p``;
+export const SubTitle = styled.p`
+    font-size: 12px;
+    font-weight: bold;
+    display: none;
+    color: white;
+    margin: 0 auto;
+    user-select: none;
+`;
 
-export const Group = styled.div``;
+export const Group = styled.div`
+    display: flex;
+    flex-direction: ${({ flexDirection }) => (flexDirection === "row" ? "row" : "column")};
+    ${({ alignItems }) => alignItems && `align-items: ${alignItems}` };
+    ${({ margin }) => margin && `margin: ${alignItems}` };
 
-export const Entities = styled.div``;
+    > ${Container}:first-of-type{
+        @media(min-width: 1100px){
+            margin-top: -150px;
+        }
+    }
+`;
+
+export const Entities = styled.div`
+    display: flex;
+    flex-direction: row;
+`;
 
 export const Meta = styled.div``;
 
