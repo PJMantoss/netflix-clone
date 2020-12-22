@@ -58,22 +58,132 @@ export const Group = styled.div`
 export const Entities = styled.div`
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
+    padding: 10px;
 `;
 
-export const Meta = styled.div``;
+export const Meta = styled.div`
+    display: flex;
+    position: absolute;
+    background: #0000008f;
 
-export const Image = styled.img``;
+`;
 
-export const Item = styled.div``;
+export const Image = styled.img`
+    border: 0;
+    width: 100%;
+    height: auto;
+    max-width: ;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+`;
 
-export const FeatureText = styled.p``;
+export const Item = styled.div`
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: transform 0.2;
 
-export const Feature = styled.div``;
+    &:hover {
+        transform: scale(1.3);
+        z-index: 99;
+    }
 
-export const Content = styled.p``;
+    @media(min-width: 1200px){
+        &:hover ${Meta}, &:hover ${Text}, &:hover ${SubTitle} {
+            display: block;
+            z-index: 100;
+        }
+    }
 
-export const FeatureClose = styled.button``;
+    &:first-of-type {
+        margin-left: 56px;
 
-export const Maturity = styled.div``;
+        @media(max-width: 1000px){
+            margin-right: 30px;
+        }
+    }
+`;
 
-export const FeatureTitle = styled(Title)``;
+export const FeatureText = styled.p`
+    color: #fff;
+    font-size: 18px;
+    font-weight: ${({ fontWeight }) => (fontWeight === "bold" ? "bold" : "normal")};
+    margin: 0;
+
+    @media(max-width: 800px){
+        line-height: 22px;
+    }
+`;
+
+export const Feature = styled.div`
+    display: flex;
+    flex-direction: row;
+    background: url(${({ src }) => src});
+    background-size: contain;
+    background-color: #000;
+    background-repeat: no-repeat;
+
+    @media(max-width: 1000px){
+        height: auto;
+        background-size: auto;
+
+        ${Title}{
+            font-size: 20px;
+            line-height: 20px;
+            margin-bottom: 10px;
+        }
+
+        ${FeatureText}{
+            font-size: 14px;
+        }
+    }
+
+`;
+
+export const Content = styled.p`
+    margin: 56px;
+    max-width: 500px;
+    line-height: normal;
+
+    @media(max-width: 1000px){
+        margin: 30px;
+        max-width: none;
+    }
+`;
+
+export const FeatureClose = styled.button`
+    color: #fff;
+    position: absolute;
+    background: transparent;
+    border: 0;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+
+    img {
+        filter: brightness(0) invert(1);
+        width: 24px;
+    }
+`;
+
+export const FeatureTitle = styled(Title)`
+    margin-left: 0;
+`;
+
+export const Maturity = styled.div`
+    background: ${({ rating }) => (rating => 15 ? "red" : "green")};
+    border-radius: 15px;
+    width: 20px;
+    padding: 5px;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+
+`;
