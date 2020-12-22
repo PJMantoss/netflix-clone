@@ -17,7 +17,7 @@ const config = {
 }
 
 const firebase = window.firebase.initializeApp(config);
-seedDatabase();
+seedDatabase(firebase);
 
 ReactDOM.render(
   <>

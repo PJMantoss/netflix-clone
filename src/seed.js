@@ -6,8 +6,6 @@ export function seedDatabase(firebase) {
           return elem.toString(16);
       });
     }
-
-    firebase = window.firebase
   
     /* Series
       ============================================ */
