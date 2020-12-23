@@ -38,21 +38,21 @@ export function BrowseContainer({ slides }){
                   <Header.Group>
                       <Header.Logo to={ROUTES.BROWSE} src="./images/misc/logo.svg" alt="Netflix" />
                       <Header.Link 
-                          active={category === 'series' ? true : false} 
+                          active={category === 'series' ? 'true' : 'false'} 
                           onClick={() => setCategory('series')}
                        >
                             Series
                        </Header.Link>
 
                        <Header.Link 
-                          active={category === 'films' ? true : false} 
+                          active={category === 'films' ? 'true' : 'false'} 
                           onClick={() => setCategory('films')}
                        >
                             Films
                        </Header.Link>
                   </Header.Group>
                   <Header.Group>
-                      <Header.Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}></Header.Search>
+                      <Header.Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
                       <Header.Profile>
                           <Header.Picture src={user.photoURL} />
                           <Header.Dropdown>
@@ -97,6 +97,9 @@ export function BrowseContainer({ slides }){
                               </Card.Item>
                           ))}
                       </Card.Entities>
+                      <Card.Feature category={category}>
+                          <p>I am the Feature!</p>
+                      </Card.Feature>
                   </Card>
               ))}
           </Card.Group>
