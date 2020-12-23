@@ -5,7 +5,7 @@ import { FirebaseContext } from '../context/firebase';
 import { FooterContainer } from './Footer';
 import { SelectProfileContainer } from './Profiles';
 
-export function BrowseContainer(){
+export function BrowseContainer({ slides }){
     //initialize state
     const [category, setCategory] = useState('series')
     const [profile, setProfile] = useState({});
@@ -23,8 +23,12 @@ export function BrowseContainer(){
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
-        }, 4000);
-    }, [user])
+        }, 3000);
+    }, [user]);
+
+    useEffect(() => {
+        setSlideRows(slides[category]);
+    }, [slides, category])
 
     return profile.displayName ? (
           <>
