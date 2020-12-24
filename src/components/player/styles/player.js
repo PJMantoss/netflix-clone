@@ -69,5 +69,10 @@ export const Button = styled.button`
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
-    padding: left: 0;
+    padding-left: 0;
+
+    &:hover {
+        transform: scale(1.05);
+        background: #ff0a16;
+    }
 `;
