@@ -9,10 +9,20 @@ export const Overlay = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    margin: 0 20px;
 `;
 
-export const Inner = styled.div``;
+export const Inner = styled.div`
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+
+    video {}
+`;
 
 export const Close = styled.button``;
 
