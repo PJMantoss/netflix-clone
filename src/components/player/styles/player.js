@@ -21,9 +21,20 @@ export const Inner = styled.div`
     max-width: 900px;
     margin: auto;
 
-    video {}
+    video {
+        height: 100%;
+        width: 100%;
+    }
 `;
 
-export const Close = styled.button``;
+export const Close = styled.button`
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 22px;
+    height: 22px;
+    opacity: 0.3;
+    
+`;
 
 export const Button = styled.button``;
