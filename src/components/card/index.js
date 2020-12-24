@@ -82,7 +82,7 @@ Card.Feature = function CardFeature({ category, children, ...restProps }){
     const {showFeature, setShowFeature, itemFeature} = useContext(FeatureContext);
 
     return showFeature ? (
-        <Feature src={`./images/${itemFeature.genre}/${category}/${itemFeature.slug}/large.jpg`}>
+        <Feature src={`./images/${category}/${itemFeature.genre}/${itemFeature.slug}/large.jpg`}>
             <Content>
                 <FeatureTitle>{itemFeature.title}</FeatureTitle>
                 <FeatureText>{itemFeature.description}</FeatureText>
