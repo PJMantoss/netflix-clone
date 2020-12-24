@@ -58,6 +58,9 @@ export const Close = styled.button`
 `;
 
 export const Button = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #e50914;
     color: #fff;
     border-color: #ff0a16;
@@ -66,4 +69,5 @@ export const Button = styled.button`
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
+    padding: left: 0;
 `;
