@@ -33,14 +33,10 @@ export const Close = styled.button`
     right: 15px;
     width: 22px;
     height: 22px;
-    opacity: 0.3;
+    opacity: 1;
     background: transparent;
     border: 0;
     cursor: pointer;
-
-    &:hover {
-        opacity: 1;
-    }
 
     &:before,
     &:after {
@@ -50,7 +46,7 @@ export const Close = styled.button`
         content: ' ';
         height: 22px;
         width: 2px;
-        background: #333;
+        background: #fff;
     }
 
     &:hover {
@@ -61,4 +57,13 @@ export const Close = styled.button`
     }
 `;
 
-export const Button = styled.button``;
+export const Button = styled.button`
+    background: #e50914;
+    color: #fff;
+    border-color: #ff0a16;
+    width: 115px;
+    height: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+`;
