@@ -24,5 +24,12 @@ Player.Video = function PlayerVideo({ ...restProps }){
                     <source src="./videos/bunny.mp4" type="video/mp4" />
                 </video>
             </Inner>
-        </Overlay>, document.body) : null;
+        </Overlay>, document.body
+        ) : null;
+}
+
+Player.Button = function PlayerButton({ ...restProps }){
+    const { showPlayer, setShowPlayer } = useContext(PlayerContext);
+
+    return <Button onClick={() => setShowPlayer(!showPlayer)}>Play</Button>
 }
