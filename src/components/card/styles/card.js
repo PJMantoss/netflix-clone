@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 export const Title = styled.p`
-    font-size: 2px;
+    font-size: 24px;
     font-weight: bold;
     color: #e5e5e5;
-    margin: 0 56px;
+    margin: 0 56px auto;
 `;
 
 export const Container = styled.div`
@@ -24,25 +24,8 @@ export const Container = styled.div`
     }
 `;
 
-export const Text = styled.p`
-    font-size: 10px;
-    font-weight: bold;
-    display: none;
-    color: white;
-    margin: 0 auto;
-    line-height: normal;
-`;
-
-export const SubTitle = styled.p`
-    font-size: 12px;
-    font-weight: bold;
-    display: none;
-    color: white;
-    margin: 0 auto;
-    user-select: none;
-`;
-
 export const Group = styled.div`
+    margin-top: 180px;
     display: flex;
     flex-direction: ${({ flexDirection }) => (flexDirection === "row" ? "row" : "column")};
     ${({ alignItems }) => alignItems && `align-items: ${alignItems}` };
@@ -55,25 +38,43 @@ export const Group = styled.div`
     }
 `;
 
+export const SubTitle = styled.p`
+    font-size: 12px;
+    font-weight: bold;
+    display: none;
+    color: white;
+    margin: 0 auto;
+    user-select: none;
+    display: none;
+`;
+
+export const Text = styled.p`
+    font-size: 10px;
+    display: none;
+    user-select: none;
+    color: white;
+    margin: 5px auto 0;
+    line-height: normal;
+`;
+
 export const Entities = styled.div`
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
-    padding: 10px;
 `;
 
 export const Meta = styled.div`
-    display: flex;
+    display: none;
     position: absolute;
     background: #0000008f;
-
+    bottom: 0;
+    padding: 10px;
 `;
 
 export const Image = styled.img`
     border: 0;
     width: 100%;
     height: auto;
-    max-width: ;
+    max-width: 305px;
     margin: 0;
     padding: 0;
     cursor: pointer;
@@ -103,6 +104,14 @@ export const Item = styled.div`
         margin-left: 56px;
 
         @media(max-width: 1000px){
+            margin-left: 30px;
+        }
+    }
+
+    &:last-of-type {
+        margin-right: 56px;
+
+        @media(max-width: 1000px){
             margin-right: 30px;
         }
     }
@@ -125,10 +134,10 @@ export const Feature = styled.div`
     position: relative;
     height: 360px;
     background: url(${({ src }) => src});
-    background-position-x: right;
     background-size: contain;
-    background-color: #000;
+    background-position-x: right;
     background-repeat: no-repeat;
+    background-color: #000;
 
     @media(max-width: 1000px){
         height: auto;
@@ -145,6 +154,10 @@ export const Feature = styled.div`
         }
     }
 
+`;
+
+export const FeatureTitle = styled(Title)`
+    margin-left: 0;
 `;
 
 export const Content = styled.div`
@@ -173,10 +186,6 @@ export const FeatureClose = styled.button`
     }
 `;
 
-export const FeatureTitle = styled(Title)`
-    margin-left: 0;
-`;
-
 export const Maturity = styled.div`
     background: ${({ rating }) => (rating >= 15 ? "red" : "green")};
     border-radius: 15px;
@@ -188,5 +197,4 @@ export const Maturity = styled.div`
     font-size: 12px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-
 `;

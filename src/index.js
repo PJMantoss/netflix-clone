@@ -28,3 +28,6 @@ ReactDOM.render(
   </>,
   document.getElementById('root')
 );
+
+// before seeding db => allow read, write: if true;
+// after seeding db => allow read, write: if request.auth.uid != null
