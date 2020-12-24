@@ -45,6 +45,19 @@ export const Close = styled.button`
     &:before,
     &:after {
         position: absolute;
+        left: 10px;
+        top: 0;
+        content: ' ';
+        height: 22px;
+        width: 2px;
+        background: #333;
+    }
+
+    &:hover {
+        transform: rotate(45deg);
+    }
+    &:after {
+        transform: rotate(-45deg);
     }
 `;
 
