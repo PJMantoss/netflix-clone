@@ -34,7 +34,18 @@ export const Close = styled.button`
     width: 22px;
     height: 22px;
     opacity: 0.3;
-    
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &:before,
+    &:after {
+        position: absolute;
+    }
 `;
 
 export const Button = styled.button``;
