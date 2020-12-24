@@ -1,6 +1,6 @@
 import React, { useState, useContext, createContext } from 'react';
 import ReactDOM from 'react-dom';
-import {} from './styles/player';
+import {Container, Overlay, Inner, Button} from './styles/player';
 
 const PlayerContext = createContext();
 
@@ -8,7 +8,7 @@ export default function Player({ children, ...restProps }){
     const [showPlayer, setShowPlayer] = useState(false);
 
     return(
-        <PlayerContext.Provider>
+        <PlayerContext.Provider value={{showPlayer, setShowPlayer}}>
             <Container {...restProps}>{children}</Container>
         </PlayerContext.Provider>
     )
