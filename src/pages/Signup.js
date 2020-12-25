@@ -34,12 +34,13 @@ export default function Signup(){
                     photoURL: Math.floor(Math.random() * 5) + 1,
                 }))
             .then(() => {
-                setEmailAddress('');
-                setPassword('');
-                setError('');
                 history.push(ROUTES.BROWSE);
             })
-            .catch(err => setError(err.message));
+            .catch(err => {
+                setEmailAddress('');
+                setPassword('');
+                setError(err.message);
+            });
     }
 
     return(
