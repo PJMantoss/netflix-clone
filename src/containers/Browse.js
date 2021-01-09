@@ -46,10 +46,10 @@ export function BrowseContainer({ slides }){
     return profile.displayName ? (
           <>
           {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
-          <Header src={process.env.PUBLIC_URL + "joker1"} dontShowOnSmallViewPort>
+          <Header src={process.env.PUBLIC_URL + "/images/misc/joker1.jpg"} dontShowOnSmallViewPort>
               <Header.Frame>
                   <Header.Group>
-                      <Header.Logo to={ROUTES.BROWSE} src={process.env.PUBLIC_URL + "./images/misc/logo.svg"} alt="Netflix"/>
+                      <Header.Logo to={ROUTES.BROWSE} src={process.env.PUBLIC_URL + "/images/misc/logo.svg"} alt="Netflix"/>
                       <Header.Link 
                           active={category === 'series' ? 'true' : 'false'} 
                           onClick={() => setCategory('series')}
