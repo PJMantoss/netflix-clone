@@ -45,7 +45,7 @@ export function BrowseContainer({ slides }){
 
     return profile.displayName ? (
           <>
-          {loading ? <Loading src={process.env.PUBLIC_URL + user.photoURL} /> : <Loading.ReleaseBody />}
+          {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
           <Header src="joker1" dontShowOnSmallViewPort>
               <Header.Frame>
                   <Header.Group>
@@ -67,7 +67,7 @@ export function BrowseContainer({ slides }){
                   <Header.Group>
                       <Header.Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
                       <Header.Profile>
-                          <Header.Picture src={user.photoURL} />
+                          <Header.Picture src={process.env.PUBLIC_URL + user.photoURL} />
                           <Header.Dropdown>
                               <Header.Group>
                                 <Header.Picture src={user.photoURL} />
