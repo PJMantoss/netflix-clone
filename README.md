@@ -22,5 +22,10 @@ SECOND STEP: I installed the following depencies using yarn.
 - yarn add normalize.css
 - yarn add fuse.js
 
-THIRD STEP: I build out the components starting with the Jumbotron component, 
+THIRD STEP: I build out the components and containers starting with the Jumbotron, then Footer and Accordion. I then created a toggle context and state in the accordion component for displaying and hiding the accordion's body onClick. Then I created the Opt-form component for the SignIn/SignUp, the Header and Feature component.
+
+FOURTH STEP: I hooked up the application with Firebase by creating a firbase context in CONTEXT folder and importing it in index.js
+
+FIFTH STEP: 
+
 25-Dec-2020
