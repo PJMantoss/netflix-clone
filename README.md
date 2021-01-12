@@ -28,7 +28,7 @@ FOURTH STEP: I hooked up the application with Firebase by creating a firbase con
 
 FIFTH STEP: I then connected the app to the cloud firestore
 
-SIXTH STEP: I then built the SIGNIN/SIGN UP Pages with validations.
+SIXTH STEP: I then built the SIGNIN/SIGN UP Pages with validations added Routes constant file.
 
 SEVENTH STEP: Then I built out the Browse page and container to hold the Profile component, Card, Search and Video Player.
 
@@ -36,6 +36,20 @@ EIGHT STEP: Added firbase sigh-in/sign-up auth functionality.
 
 NINTH STEP: Built Profile component, Search Box and added them to Header.
 
-TENTH STEP: 
+TENTH STEP: Hydrated Firestore with seed Data.
+
+ELEVENTH STEP: Created a custom firebase useContent Hook for pulling data from firebase.
+
+TWELFTH STEP: Created a data Selection map to merge pieces of data (series and films) from the database and pass them into the Browse container
+
+13TH STEP: Created and styled the Card and Player component for displaying results from the database and playing video preview.
+
+14TH STEP: Created custom Auth Listener hook for modifying routes
+
+15TH STEP: Modify App Routes to be protected.
+
+CHALLENGES AND SOLUTIONS:
+- I had trouble hydrating the firestore database with seed data. I was able to solve this by changing 'allow read: false' to 'allow read, write: if true' in firebase and correctly importing seedDatabase and initializing firebase in index.js
+- All background and data images from firestore refused to display. I later found out that I had to use a certain piece of code for referencing public folders when sourcing images, so I solved this challenge by adding process.env.PUBLIC_URL in front of any image path in the src attribute e.g. src={process.env.PUBLIC_URL + /images/} 
 
 25-Dec-2020
