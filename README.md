@@ -15,7 +15,12 @@ This project is a complex app that uses many of React features that I've learnt 
 
 FIRST STEP: I designed the architecture of the app by organizing the directories that would be used in the app. The directories are COMPONENTS, CONTAINERS, CONSTANTS, CONTEXT, FIXTURES, HELPERS, HOOKS, PAGES and UTILS.
 
-SECOND STEP: I created the styled component.
+SECOND STEP: I installed the following depencies using yarn.
 
-THIRD STEP: 
+- yarn add react-router-dom
+- yarn add styled-components
+- yarn add normalize.css
+- yarn add fuse.js
+
+THIRD STEP: I build out the components starting with the Jumbotron component, 
 25-Dec-2020
